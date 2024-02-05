@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.recyclerView.setHasFixedSize(true)
-        binding.recyclerView.layoutManager = LinearLayoutManager(this)
+        binding.mainRecyclerView.setHasFixedSize(true)
+        binding.mainRecyclerView.layoutManager = LinearLayoutManager(this)
 
         mList= arrayListOf()
         prepareData()
